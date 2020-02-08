@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar"
 import Navbar from "./components/Navbar";
-
+import DataBody from "./components/DataBody";
 
 function App(){
     return(
@@ -10,6 +10,7 @@ function App(){
             <Header/>
             {/* <SearchBar/> */}
             <Navbar/>
+            <DataBody/>
         </div>
     )
 }
