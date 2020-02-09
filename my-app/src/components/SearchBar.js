@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import "../style/searchbar.css";
+import DataAreaContext from "../utils/DataAreaContext";
 
-function SearchBar({handleSearch}){
+const SearchBar = () => {
+    const context = useContext(DataAreaContext);
+
     return (
         <div className="searchbar">
             <form className="form-inline">
@@ -10,7 +13,7 @@ function SearchBar({handleSearch}){
                 type="search"
                 placehold="Search"
                 aria-label="Search"
-                onChange={e => handleSearch(e)}
+                onChange={e => context.handleSearch(e)}
                 />
                 <button className="btn my-2 my-sm-0" type="submit">
                     Search
