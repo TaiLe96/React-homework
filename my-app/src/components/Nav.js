@@ -1,8 +1,8 @@
 import React from "react";
-import SearchBar from "./SearchBar.js";
+import SearchBox from "./SearchBar.js";
 import "../style/navbar.css";
 
-function Navbar({ handleSearchChange }) {
+function Nav({ handleSearchChange }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <button
@@ -27,10 +27,10 @@ function Navbar({ handleSearchChange }) {
           <input type="date" className="form-control" />
         </div>
         <div className="search-area col-4">
-          <SearchBar handleSearchChange={handleSearchChange} />
+          <SearchBox handleSearchChange={handleSearchChange} />
         </div>
       </div>
     </nav>
   );
 }
-export default Navbar;
+export default Nav;
